@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Яна Лесная](https://up.htmlacademy.ru/adaptive/20/user/1289173).
-* Наставник: `Неизвестно`.
+- Студент: [Яна Лесная](https://up.htmlacademy.ru/adaptive/20/user/1289173).
+- Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 ---
 
