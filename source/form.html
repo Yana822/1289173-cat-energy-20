@@ -36,7 +36,115 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="container"></div>
+      <div class="container">
+        <section class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__text-block">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__name">
+            <label for="name">ИМЯ:*</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="барсик"
+            />
+          </p>
+          <p class="form__weight">
+            <label for="text">Вес (кг):*</label>
+            <textarea
+              rows="1"
+              id="text"
+              name="text"
+              placeholder="7"
+            ></textarea>
+          </p>
+          <p class="form__years">
+            <label for="text">Возраст (лет):</label>
+            <textarea
+              rows="1"
+              id="text"
+              name="text"
+              placeholder="7"
+            ></textarea>
+          </p>
+          <ul class="desired-result">
+            <li class="desired-result__item">
+              <input class="desired-result--input-radio" type="radio" name="desired-result--name" value="battery" id="filter-battery" checked>
+              <label for="filter-battery">похудение</label>
+            </li>
+            <li class="desired-result__item">
+              <input class="desired-result--input-radio" type="radio" name="desired-result--name" value="battery" id="filter-battery">
+              <label for="filter-battery">Набор массы</label>
+            </li>
+            <li class="desired-result__item">
+              <input class="desired-result--input-radio" type="radio" name="desired-result--name" value="battery" id="filter-battery">
+              <label for="filter-battery">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+          <div class="owner-contacts">
+          <h2 class="owner-contacts__title--decorative-element">Контактные данные(владельца кота)</h2>
+          <p class="owner-contacts__email--email-icon">
+            <label for="email">E-mail:*</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="kuklachev@gmail.com"
+            />
+          </p>
+          <p class="owner-contacts__phone--phone-icon">
+            <label for="phone">Телефон:*</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="8 (960) 900-60-90"
+            />
+          </p>
+          <h2 class="owner-contacts__title--decorative-element">Комментарий</h2>
+          <p class="owner-contacts__comment">
+            <textarea
+              rows="5"
+              id="text-letter"
+              name="text-letter"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
+          </p>
+          </div>
+         <h2 class="owner-contacts__title--decorative-element">Дополнительно</h2>
+          <ul class="addition">
+           <li class="addition__item">
+           <input class="addition__filter-battery" type="checkbox" name="sweetener" id="sweetener">
+           <label for="sweetener">сахарозаменитель</label>
+            </li>
+          <li class="addition__item">
+            <input class="addition__filter-battery" type="checkbox" name="water" id="water">
+            <label for="water">питьевая вода</label>
+          </li>
+          <li class="addition__item">
+            <input class="addition__filter-battery" type="checkbox" name="milk" id="milk">
+            <label for="milk">молоко</label>
+          </li>
+          <li class="addition__item">
+            <input class="addition__filter-battery" type="checkbox" name="vitamins" id="vitamins">
+            <label for="vitamins">витамины</label>
+          </li>
+        </ul>
+          <a class="form__green-button form__green-button--hover form__green-button--pressed"
+          href="#">отправить заявку</a>
+        </form>
+        <p>* — Обязательные поля</p>
+        <section class="contacts">
+          <div class="contacts-info">
+            <p class="contacts-info__invite">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <img class="contacts-info__map" src="https://via.placeholder.com/320x262">
+          </div>
+        </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
