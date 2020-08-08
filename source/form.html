@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -14,15 +15,15 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a>главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a>подбор программы</a>
+            <li class="main-nav__item">
+              <a href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -61,7 +62,7 @@
             <ul class="desired-result">
               <li class="desired-result__item">
                 <input
-                  class="desired-result--input-radio"
+                  class="visually-hidden desired-result--input-radio"
                   type="radio"
                   name="desired-result--name"
                   value="battery"
@@ -72,7 +73,7 @@
               </li>
               <li class="desired-result__item">
                 <input
-                  class="desired-result--input-radio"
+                  class="visually-hidden desired-result--input-radio"
                   type="radio"
                   name="desired-result--name"
                   value="battery"
@@ -82,7 +83,7 @@
               </li>
               <li class="desired-result__item">
                 <input
-                  class="desired-result--input-radio"
+                  class="visually-hidden desired-result--input-radio"
                   type="radio"
                   name="desired-result--name"
                   value="battery"
@@ -131,7 +132,7 @@
             <ul class="addition">
               <li class="addition__item">
                 <input
-                  class="addition__filter-battery"
+                  class="visually-hidden addition__filter-battery"
                   type="checkbox"
                   name="sweetener"
                   id="sweetener"
@@ -140,7 +141,7 @@
               </li>
               <li class="addition__item">
                 <input
-                  class="addition__filter-battery"
+                  class="visually-hidden addition__filter-battery"
                   type="checkbox"
                   name="water"
                   id="water"
@@ -149,7 +150,7 @@
               </li>
               <li class="addition__item">
                 <input
-                  class="addition__filter-battery"
+                  class="visually-hidden addition__filter-battery"
                   type="checkbox"
                   name="milk"
                   id="milk"
@@ -158,7 +159,7 @@
               </li>
               <li class="addition__item">
                 <input
-                  class="addition__filter-battery"
+                  class="visually-hidden addition__filter-battery"
                   type="checkbox"
                   name="vitamins"
                   id="vitamins"
@@ -202,7 +203,8 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
-                >Мы в Вконтакте</a>
+                >Мы в Вконтакте</a
+              >
             </li>
             <li class="social__item">
               <a
