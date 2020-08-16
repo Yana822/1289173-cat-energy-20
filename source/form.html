@@ -7,8 +7,11 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="#" width="202px" height="60px" alt="Логотип Кэт энерджи" />
+      <a class="page-header__logo">
+        <img
+          src="https://via.placeholder.com/202x60"
+          alt="Логотип Кэт энерджи"
+        />
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -30,13 +33,13 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="container">
-        <section class="questionary">
-          <h1 class="questionary__title">Подбор программы</h1>
-          <p class="questionary__text-block">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <section class="questionary">
+        <h1 class="questionary__title">Подбор программы</h1>
+        <p class="questionary__text-block">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form">
             <p class="form__name">
               <label for="name">ИМЯ:*</label>
               <input id="name" type="text" name="name" placeholder="барсик" />
@@ -59,176 +62,177 @@
                 placeholder="7"
               ></textarea>
             </p>
-            <ul class="desired-result">
-              <li class="desired-result__item">
-                <input
-                  class="visually-hidden desired-result--input-radio"
-                  type="radio"
-                  name="desired-result--name"
-                  value="battery"
-                  id="filter-battery"
-                  checked
-                />
-                <label for="filter-battery">похудение</label>
-              </li>
-              <li class="desired-result__item">
-                <input
-                  class="visually-hidden desired-result--input-radio"
-                  type="radio"
-                  name="desired-result--name"
-                  value="battery"
-                  id="filter-battery"
-                />
-                <label for="filter-battery">Набор массы</label>
-              </li>
-              <li class="desired-result__item">
-                <input
-                  class="visually-hidden desired-result--input-radio"
-                  type="radio"
-                  name="desired-result--name"
-                  value="battery"
-                  id="filter-battery"
-                />
-                <label for="filter-battery">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-            <div class="owner-contacts">
-              <h2 class="owner-contacts__title--decorative-element">
-                Контактные данные(владельца кота)
-              </h2>
-              <p class="owner-contacts__email--email-icon">
-                <label for="email">E-mail:*</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="kuklachev@gmail.com"
-                />
-              </p>
-              <p class="owner-contacts__phone--phone-icon">
-                <label for="phone">Телефон:*</label>
-                <input
-                  id="phone"
-                  type="tel"
-                  name="phone"
-                  placeholder="8 (960) 900-60-90"
-                />
-              </p>
-              <h2 class="owner-contacts__title--decorative-element">
-                Комментарий
-              </h2>
-              <p class="owner-contacts__comment">
-                <textarea
-                  rows="5"
-                  id="text-letter"
-                  name="text-letter"
-                  placeholder="Расскажите обо всех повадках кота"
-                ></textarea>
-              </p>
-            </div>
-            <h2 class="owner-contacts__title--decorative-element">
-              Дополнительно
-            </h2>
-            <ul class="addition">
-              <li class="addition__item">
-                <input
-                  class="visually-hidden addition__filter-battery"
-                  type="checkbox"
-                  name="sweetener"
-                  id="sweetener"
-                />
-                <label for="sweetener">сахарозаменитель</label>
-              </li>
-              <li class="addition__item">
-                <input
-                  class="visually-hidden addition__filter-battery"
-                  type="checkbox"
-                  name="water"
-                  id="water"
-                />
-                <label for="water">питьевая вода</label>
-              </li>
-              <li class="addition__item">
-                <input
-                  class="visually-hidden addition__filter-battery"
-                  type="checkbox"
-                  name="milk"
-                  id="milk"
-                />
-                <label for="milk">молоко</label>
-              </li>
-              <li class="addition__item">
-                <input
-                  class="visually-hidden addition__filter-battery"
-                  type="checkbox"
-                  name="vitamins"
-                  id="vitamins"
-                />
-                <label for="vitamins">витамины</label>
-              </li>
-            </ul>
-            <div class="form__green-button">
-              <button type="submit">отправить заявку</button>
-            </div>
-          </form>
-          <p>* — Обязательные поля</p>
-          <section class="contacts">
-            <div class="contacts-info">
-              <p class="contacts-info__invite">
-                приглашаем к сотрудничеству дилеров!
-              </p>
-              <p class="contacts-info__address">
-                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-              </p>
-              <img
-                class="contacts-info__map"
-                src="https://via.placeholder.com/320x262"
+          </div>
+          <ul class="desired-result">
+            <li class="desired-result__item">
+              <input
+                class="visually-hidden desired-result--input-radio"
+                type="radio"
+                name="desired-result--name"
+                value="battery"
+                id="filter-battery"
+                checked
               />
-            </div>
-          </section>
-        </section>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="container">
-        <a class="page-footer__logo">
-          <img
-            src="https://via.placeholder.com/128x24"
-            alt="Логотип Кэт энерджи"
-          />
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a
-                class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy"
-                >Мы в Вконтакте</a
-              >
+              <label for="filter-battery">похудение</label>
             </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--instagram"
-                href="https://www.instagram.com/htmlacademy"
-                >Мы в Инстаграме</a
-              >
+            <li class="desired-result__item">
+              <input
+                class="visually-hidden desired-result--input-radio"
+                type="radio"
+                name="desired-result--name"
+                value="battery"
+                id="filter-battery"
+              />
+              <label for="filter-battery">Набор массы</label>
             </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--facebook"
-                href="https://www.facebook.com/htmlacademy"
-                >Мы в Фейсбуке</a
-              >
+            <li class="desired-result__item">
+              <input
+                class="visually-hidden desired-result--input-radio"
+                type="radio"
+                name="desired-result--name"
+                value="battery"
+                id="filter-battery"
+              />
+              <label for="filter-battery">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
+          <div class="owner-contacts">
+            <p class="owner-contacts__title--decorative-element">
+              Контактные данные(владельца кота)
+            </p>
+            <p class="owner-contacts__email--email-icon">
+              <label for="email">E-mail:*</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="kuklachev@gmail.com"
+              />
+            </p>
+            <p class="owner-contacts__phone--phone-icon">
+              <label for="phone">Телефон:*</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="8 (960) 900-60-90"
+              />
+            </p>
+            <p class="owner-contacts__title--decorative-element">
+              Комментарий
+            </p>
+            <p class="owner-contacts__comment">
+              <textarea
+                rows="5"
+                id="text-letter"
+                name="text-letter"
+                placeholder="Расскажите обо всех повадках кота"
+              ></textarea>
+            </p>
+          </div>
+          <p class="owner-contacts__title--decorative-element">
+            Дополнительно
+          </p>
+          <ul class="addition">
+            <li class="addition__item">
+              <input
+                class="visually-hidden addition__filter-battery"
+                type="checkbox"
+                name="sweetener"
+                id="sweetener"
+              />
+              <label for="sweetener">сахарозаменитель</label>
+            </li>
+            <li class="addition__item">
+              <input
+                class="visually-hidden addition__filter-battery"
+                type="checkbox"
+                name="water"
+                id="water"
+              />
+              <label for="water">питьевая вода</label>
+            </li>
+            <li class="addition__item">
+              <input
+                class="visually-hidden addition__filter-battery"
+                type="checkbox"
+                name="milk"
+                id="milk"
+              />
+              <label for="milk">молоко</label>
+            </li>
+            <li class="addition__item">
+              <input
+                class="visually-hidden addition__filter-battery"
+                type="checkbox"
+                name="vitamins"
+                id="vitamins"
+              />
+              <label for="vitamins">витамины</label>
+            </li>
+          </ul>
+
+          <button class="form__green-button" type="submit">
+            отправить заявку
+          </button>
+          <p class="form__required-fields">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="contacts">
+        <div class="contacts-info">
+          <p class="contacts-info__invite">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="contacts-info__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
         </div>
-        <div class="page-footer__copyright copyright">
-          <a
-            class="copyright__link copyright__link--logo-academy"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy</a
-          >
-        </div>
+        <img
+          class="contacts-info__map"
+          src="../img/bg-map-mobile@1x.png"
+          width="320"
+          height="362"
+        />
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img
+          src="https://via.placeholder.com/128x24"
+          alt="Логотип Кэт энерджи"
+        />
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+              >Мы в Вконтакте</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy"
+              >Мы в Инстаграме</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy"
+              >Мы в Фейсбуке</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a
+          class="copyright__link copyright__link--logo-academy"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          >HTML Academy</a
+        >
       </div>
     </footer>
   </body>
