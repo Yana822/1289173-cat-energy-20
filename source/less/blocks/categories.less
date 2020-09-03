@@ -1,7 +1,21 @@
 .categories {
   .container();
-  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1020px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+.categories__item {
   background: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .categories__title {
