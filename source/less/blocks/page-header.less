@@ -8,27 +8,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  .container();
 
-  @media (min-width: @tablet-width) {
-    min-width: 708px;
-  }
+  .page-header__logo {
+    height: 37px;
 
-  @media (min-width: @desktop-width) {
-    min-width: 1020px;
-  }
-}
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      max-width: 202px;
+    }
 
-.page-header__logo {
-  height: 37px;
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-    max-width: 202px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: inline-block;
-    max-width: 202px;
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+      max-width: 202px;
+    }
   }
 }

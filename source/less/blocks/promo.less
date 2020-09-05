@@ -1,8 +1,10 @@
 .promo {
   display: block;
+  /*
   background-image: url("../img/index-background-mobile@1x.jpg");
+  width: 320px;*/
   background-repeat: no-repeat;
-  width: 320px;
+
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -10,33 +12,15 @@
   }
 }
 
-.container {
-  .container();
-
-  @media (min-width: @tablet-width) {
-    min-width: 708px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 1020px;
-  }
-}
-
 .promo__wrapper {
   @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
+    display: inline-block;
     max-width: 414px;
-    top: 140px;
-    left: 117px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 414px;
-    display: block;
-    position: absolute;
-    top: 223px;
-    left: 190px;
+    display: inline-block;
   }
 }
 
@@ -90,4 +74,5 @@
     float: left;
   }
 }
+
 /*.promo__main-image {} .promo__green-button {}*/
