@@ -1,7 +1,3 @@
-.catalog {
-  .container();
-}
-
 .catalog__title {
   display: inline-block;
   font-family: "Oswald", "Tahoma", sans-serif;
@@ -19,11 +15,27 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1020px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 63px;
+  }
 }
 
 .catalog-list__item {
   display: flex;
   margin-bottom: 19px;
+  max-width: 245px;
 }
 
 .catalog__img {

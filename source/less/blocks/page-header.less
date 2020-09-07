@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -6,4 +8,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  .page-header__logo {
+    height: 37px;
+
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      max-width: 202px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+      max-width: 202px;
+    }
+  }
 }
